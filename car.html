@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giggleshitter</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+  <audio id="hoverSound" src="audios/bcry.mp3" preload="auto"></audio>
+  <audio id="gunshotSound" src="audios/clean-machine-gun-burst-98224.mp3" preload="auto"></audio>
+  <audio id="upsetSound" src="audios/upset.mp3" preload="auto"></audio>
+
+  <h1>SHOOT THEM CARS</h1>
+
+  <div id="hud">
+    <div id="ammoDisplay" class="ammo">Ammo: 10 / 10</div>
+    <div id="reloadStatus" class="reload">Ready</div>
+  </div>
+
+  <div id="crosshair" aria-hidden="true"></div>
+
+  <section>
+    <div class="box" id="b1"></div>
+    <div class="box" id="b2"></div>
+    <div class="box" id="b3"></div>
+    <div class="box" id="b4"></div>
+    <div class="box" id="b5"></div>
+  </section>
+
+  <div id="mobileControls">
+    <button id="fireButton" type="button">FIRE</button>
+    <div class="aimInstructions">Drag anywhere to aim, then tap FIRE</div>
+  </div>
+
+  <script src="car.js"></script>
+</body>
+</html>
